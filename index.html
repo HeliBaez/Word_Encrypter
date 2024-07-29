@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Encrypter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Encrypter</h1>
+        <p>Encrypt or decrypt your text</p>
+        <div class="input_container">
+            <textarea id="input" class="text_area" placeholder="Enter your text here..."></textarea>
+            <!--<p id="error_message">You cannot use lowercase letters, special characters, or accents.</p>-->
+        </div>
+        <div class="buttons">
+            <button onclick="btnEncrypt()">Encrypt</button>
+            <button onclick="btnDecrypt()">Decrypt</button>
+        </div>
+        <div class="output_container">
+            <textarea readonly id="output" class="mensaje" placeholder="Decrypted text will appear here..."></textarea>
+            <div class="icons">
+                <button class="icon copy" onclick="copyText()">&#128203;</button>
+                <button class="icon clear" onclick="clearText()">&#128465;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="drive.js"></script>
+</body>
+</html>
